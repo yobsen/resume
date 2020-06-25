@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "RobotoMono";
+  font-stretch: normal;
+  font-style: normal;
+  src: url("font/RobotoMono-Light.ttf") format("ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  transition: all 0.2s linear;
+  text-decoration: none;
+  color: #7a79b7;
+}
+
+a:hover {
+  color: #00afb5;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+  text-align: left;
+}
+
+body {
+  font-size: 18px;
+  color: #22181c;
+}
+
+p {
+  text-align: justify;
+}
+ul {
+  list-style: disclosure-closed inside;
+}
+
+.resume {
+  grid-gap: 20px;
+  min-height: 100vh;
+  background: #d7cde1;
+  margin: 0;
+  font-family: "RobotoMono";
+  padding: 20px;
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: 1fr 1fr;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: justify;
+}
+
+.resume-contacts {
+  grid-column-end: span 2;
+  text-align: left;
+}
+
+.resume-header__name,
+.resume-contacts__github {
+  font-size: 32px;
+  display: block;
+}
+
+.resume-header__position,
+.resume-contacts__email {
+  font-size: 24px;
+  display: block;
+}
+
+.section-title {
+  margin-top: 30px;
+}
+
+.resume-image {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  object-fit: none;
+  object-position: 0 0;
+}
+
+.wh-2 {
+  grid-row: 6;
+}
+
+.wh-4 {
+  grid-row: 8;
+}
+
+.intro,
+.section-title,
+.section-column {
+  grid-column-end: span 2;
+}
+
+@media (min-width: 600px) {
+  .resume-contacts {
+    text-align: right;
+    grid-column-end: span 1;
+  }
+
+  .wh-2 {
+    grid-row: 5;
+  }
+
+  .wh-4 {
+    grid-row: 7;
+  }
+
+  .resume-header__name,
+  .resume-contacts__github {
+    font-size: 26px;
+  }
+
+  .resume-header__position,
+  .resume-contacts__email {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 850px) {
+  body {
+    font-size: 17px;
+  }
+  .wh-2 {
+    grid-row: auto;
+  }
+
+  .wh-4 {
+    grid-row: auto;
+  }
+
+  .resume {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .resume-contacts {
+    text-align: right;
+    grid-column-end: span 2;
+  }
+  .resume-header__name,
+  .resume-contacts__github {
+    font-size: 35px;
+    display: block;
+  }
+
+  .resume-header__position,
+  .resume-contacts__email {
+    font-size: 24px;
+    display: block;
+  }
+
+  .intro,
+  .section-title {
+    grid-column-end: span 3;
+    margin-top: 20px;
+  }
+  .section-column {
+    grid-column-end: auto;
+  }
+}
