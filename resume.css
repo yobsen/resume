@@ -65,11 +65,32 @@ li::marker {
   grid-template-columns: 1fr 1fr;
 }
 
+.resume-header__name {
+  font-size: 44px;
+  padding-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.resume-header__description {
+  font-size: 24px;
+  display: block;
+  opacity: 0.6;
+}
+
+.resume-contacts__email,
+.resume-contacts__github {
+  font-size: 24px;
+  display: block;
+  padding-top: 10px;
+  opacity: 0.6;
+}
+
 .profile {
   text-align: justify;
   border-bottom: 1px solid #f4b0d9;
   padding: 30px 0px 30px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .main-section {
@@ -96,12 +117,15 @@ li::marker {
   padding-bottom: 5px;
 }
 
-.skills {
-  padding-left: 30px;
+.main-section__organization {
+  font-size: 20px;
+  opacity: 0.9;
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 
-.skills__icon {
-  max-width: 25px;
+.skills {
+  padding-left: 30px;
 }
 
 .employment {
@@ -109,52 +133,56 @@ li::marker {
   border-right: 1px solid #f4b0d9;
 }
 
-.employment__icon {
+.employment__icon,
+.skills__icon {
   max-width: 25px;
 }
 
-.main-section__organization {
-  font-size: 20px;
-  opacity: 0.9;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-/* @media (min-width: 600px) { */
-/*   .resume-contacts { */
-/*     text-align: right; */
-/*     grid-column-end: span 1; */
-/*   } */
-/*  */
-/*   .resume-header__name, */
-/*   .resume-contacts__github { */
-/*     font-size: 26px; */
-/*   } */
-/*  */
-/*   .resume-header__position, */
-/*   .resume-contacts__email { */
-/*     font-size: 24px; */
-/*   } */
-/* } */
-/*  */
-@media (min-width: 850px) {
-  .resume-header__name {
-    font-size: 48px;
-    padding-bottom: 10px;
+@media (max-width: 650px) {
+  .resume {
+    padding: 30px;
+  }
+
+  .resume-contacts {
+    text-align: left;
+  }
+
+  .resume-header {
     display: block;
-    text-transform: uppercase;
+  }
+
+  .resume-header__name {
+    font-size: 26px;
   }
 
   .resume-header__description {
-    font-size: 24px;
-    display: block;
-    opacity: 0.6;
+    font-size: 22px;
   }
 
-  .resume-contacts__email,
-  .resume-contacts__github {
-    font-size: 24px;
+  .resume-contacts__github,
+  .resume-contacts__email {
+    font-size: 20px;
+  }
+
+  .profile {
+    font-size: 16px;
+  }
+
+  .main-section {
     display: block;
-    padding-top: 10px;
-    opacity: 0.6;
+  }
+
+  .employment {
+    border-right: none;
+    border-bottom: 1px solid #f4b0d9;
+    padding-bottom: 30px;
+  }
+
+  .main-section__header {
+    font-size: 22px;
+  }
+
+  .skills {
+    padding: 30px 0;
   }
 }
