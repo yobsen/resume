@@ -39,7 +39,7 @@ body {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 ul {
@@ -172,14 +172,18 @@ li::marker {
     display: block;
   }
 
+  .main-section__header {
+    font-size: 22px;
+  }
+
+  .main-section__date {
+    text-align: left;
+  }
+
   .employment {
     border-right: none;
     border-bottom: 1px solid #f4b0d9;
     padding-bottom: 30px;
-  }
-
-  .main-section__header {
-    font-size: 22px;
   }
 
   .skills {
