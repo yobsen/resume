@@ -29,118 +29,95 @@
 
   <body class="resume">
     <div class="resume-header">
-      <h1 class="resume-header__name">Maria&nbsp;Elizarova</h1>
-      <h2 class="resume-header__description">Full&nbsp;Stack&nbsp;Developer</h2>
-    </div>
+      <div>
+        <h1 class="resume-header__name">Maria&nbsp;Elizarova</h1>
+        <h2 class="resume-header__description">Full&nbsp;Stack&nbsp;Developer</h2>
+      </div>
 
-    <div class="resume-contacts">
-      <a class="resume-contacts__github" href="https://github.com/yobsen"
-        >github.com/yobsen</a
-      >
-      <a
-        class="resume-contacts__email"
-        href="mailto:porosenie@gmail.com"
-        >porosenie@gmail.com</a
-      >
+      <div class="resume-contacts">
+        <a class="resume-contacts__github" href="https://github.com/yobsen"
+          >github.com/yobsen</a
+        >
+        <a
+          class="resume-contacts__email"
+          href="mailto:porosenie@gmail.com"
+          >yobs.mary@gmail.com</a
+        >
+      </div>
     </div>
 
     <div class="profile">
-      I have over 3 years of experience in building web applications using Rails and Vue.
+      I have over 3 years of experience in building web applications using Rails and Vue. Self-learning is one of my best sides, that's why I'm always open to the new technologies and ready to find the most efficient stack for your project.
     </div>
 
-    <div class="section-title">
-      <h2>Employment History</h2>
-    </div>
-    <div class="section-column wh-1">
-      <h3>Sep 2017 - Jul 2018</h3>
-      <p><strong>Graphics Management System</strong> for large expositions.</p>
-    </div>
-    <div class="section-column wh-3">
-      <h3>May 2016 - Mar 2019</h3>
-      <p><strong>Mindbody</strong> connects fitness studios and users.</p>
-    </div>
-    <div class="section-column wh-5">
-      <h3>Feb 2015 - May 2016</h3>
-      <p>
-        <strong>Rambler&Co</strong> gazeta.ru is the third most cited online
-        newspaper in Russia.
-      </p>
-    </div>
-    <div class="section-column wh-2">
-      <p>
-        Reduced dashboard rendering time by implementing PostgreSQL materialized
-        views. Implemented Leaflet tiles map for expositions floors with custom
-        logic: creation, modification and deletion of items via AJAX, filtering
-        and printing.
-      </p>
-    </div>
-    <div class="section-column wh-4">
-      <p>
-        Integrated Mindbody API and implemented cron based sync for Lymber.
-        Implemented Rails endpoint for Amazon Alexa Skill. Implemented
-        auto-discount logic for classes.
-      </p>
-    </div>
-    <div class="section-column wh-5">
-      <p>
-        Implemented Single Table Inheritance for articles, which helped to
-        remove UNION queries while preserving the behaviour of different types.
-        Added jsonb store, which allowed to change article schema on the fly.
-      </p>
-    </div>
+    <div class="main-section">
+      <div class="employment">
+        <h2 class="main-section__header">Employment History</h2>
+          <img class="employment__icon" src="icons/briefcase-icon.svg">
+        <div class="main-section__column">
+          <h3 class="main-section__date">Oct 2019 - May 2020</h3>
+          <p class="main-section__organization">Landing International</p>
+          <p>B2B solution for cosmetic brands and retailer</p>
+          <ul>
+            <li>Created two-role authentication</li>
+            <li>Interface for handling and creating orders and products</li>
+            <li>Ability to interact between retailer and brand</li>
+          </ul>
+        </div>
+        <div class="main-section__column">
+          <h3 class="main-section__date">May 2019 - Sep 2019</h3>
+          <p class="main-section__organization"><strong>Fashion Shopping Aggregator</strong></p>
+          <p>Platform for online shopping</p>
+          <ul>
+            <li>Implemented scraping for diffirent online shopping platforms</li>
+            <li>Updated Rails and ecosystem to the last version</li>
+            <li>Refactored GOD methods and classes</li>
+          </ul>
+        </div>
+        <div class="main-section__column">
+          <h3 class="main-section__date">Feb 2017 - Apr 2019</h3>
+          <p class="main-section__organization"><strong>Mindbody</strong></p>
+          <p>Service for connecting fitness studios around the world to the end-users</p>
+          <ul>
+            <li>Integrated Mindbody API for Lymber</li>
+            <li>Implemented auto-discount logic for classes</li>
+            <li>Created multiple user interfaces for buying and signing up classes</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="section-title">
-      <h2>Key Skills</h2>
-    </div>
-    <div class="section-column">
-      <h3>Backend</h3>
-      <ul>
-        <li>MVC: Phoenix & Rails</li>
-        <li>RESTful controllers</li>
-        <li>TDD with RSpec</li>
-        <li>PostgreSQL</li>
-        <li>Redis for Sidekiq and cache</li>
-      </ul>
-    </div>
-    <div class="section-column">
-      <h3>Frontend</h3>
-      <ul>
-        <li>JavaScript ES10</li>
-        <li>Vue, Nuxt, D3</li>
-        <li>BEM, CSS Grid, flexboxes</li>
-        <li>Tree Shaking</li>
-      </ul>
-    </div>
-    <div class="section-column">
-      <h3>Devops</h3>
-      <ul>
-        <li>NixOS, Debian, Alpine</li>
-        <li>Kubernetes, Docker</li>
-        <li>Nginx with Let's Encrypt</li>
-        <li>CI & CD with Git</li>
-      </ul>
-    </div>
-
-    <div class="section-title">
-      <h2>Git</h2>
-    </div>
-    <div class="section-column">
-      <a href="https://ksevelyar.github.io/life/" target="_blank">
-        <h3>Conway's Game of life</h3>
-        <img class="resume-image" src="images/life.png" alt="" />
-      </a>
-    </div>
-    <div class="section-column">
-      <a href="https://ksevelyar.github.io/code-review/" target="_blank">
-        <h3>Code Review Dashboard</h3>
-        <img class="resume-image" src="images/code-review-dashboard.png" alt="" />
-      </a>
-    </div>
-    <div class="section-column">
-      <a href="https://github.com/ksevelyar/dotfiles" target="_blank">
-        <h3>Tools</h3>
-        <img class="resume-image" src="images/dotfiles.png" alt="" />
-      </a>
+      <div class="skills">
+        <h2 class="main-section__header">Skills</h2>
+          <img class="skills__icon" src="icons/gears-icon.svg">
+        <div class="main-section__column">
+          <h3>Backend</h3>
+          <ul>
+            <li>Rails & Phoenix</li>
+            <li>RESTful controllers</li>
+            <li>TDD with RSpec</li>
+            <li>PostgreSQL, SQlite, MongoDB</li>
+            <li>Redis for Sidekiq and cache</li>
+          </ul>
+        </div>
+        <div class="main-section__column">
+          <h3>Frontend</h3>
+          <ul>
+            <li>JavaScript ES10</li>
+            <li>Vue.js, Nuxt, React</li>
+            <li>BEM, CSS Grid, flexboxes</li>
+            <li>Bulma, Bootstrap, Tailwind</li>
+            <li>Tree Shaking</li>
+          </ul>
+        </div>
+        <div class="main-section__column">
+          <h3>Tools</h3>
+          <ul>
+            <li>NixOS, Debian, Arch Linux</li>
+            <li>Docker</li>
+            <li>CI & CD with Git</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
