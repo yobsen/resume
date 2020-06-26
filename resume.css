@@ -35,7 +35,6 @@ h3 {
 body {
   font-size: 18px;
   color: #000;
-  border: 2px solid #f4b0d9;
 }
 
 p {
@@ -52,11 +51,11 @@ li::marker {
 }
 
 .resume {
-  min-height: 100vh;
   font-family: "IBMPlexMono", monospace;
   padding: 40px;
   max-width: 970px;
   margin: 20px auto;
+  border: 2px solid #f4b0d9;
 }
 
 .resume-header {
