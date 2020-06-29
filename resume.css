@@ -140,16 +140,16 @@ li::marker {
 
 @media print {
   body {
-    transform: scale(0.91);
+    zoom: 85%;
   }
 
   .resume {
-    padding: 10px;
+    padding: 50px;
     border: none;
   }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .resume {
     border: none;
     padding: 30px;
