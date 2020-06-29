@@ -138,6 +138,16 @@ li::marker {
   max-width: 25px;
 }
 
+@media print {
+  body {
+    transform: scale(0.91);
+  }
+
+  .resume {
+    border: none;
+  }
+}
+
 @media (max-width: 650px) {
   .resume {
     padding: 30px;
