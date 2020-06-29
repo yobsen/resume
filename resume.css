@@ -141,6 +141,7 @@ li::marker {
 @media print {
   body {
     zoom: 85%;
+    max-height: 100vh;
   }
 
   .resume {
