@@ -140,7 +140,7 @@ li::marker {
 
 @media print {
   body {
-    zoom: 85%;
+    zoom: 80%;
     max-height: 100vh;
   }
 
