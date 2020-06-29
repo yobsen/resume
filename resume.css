@@ -150,6 +150,7 @@ li::marker {
 
 @media (max-width: 650px) {
   .resume {
+    border: none;
     padding: 30px;
   }
 
