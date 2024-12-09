@@ -55,7 +55,8 @@ li::marker {
   padding: 40px;
   max-width: 970px;
   margin: 20px auto;
-  border: 2px solid #f4b0d9;
+  border-radius: 4px;
+  box-shadow: #f4b0d9 0px 1px 8px 0px;
 }
 
 .resume-header {
@@ -196,6 +197,7 @@ li::marker {
   .employment {
     border-right: none;
     border-bottom: 1px solid #f4b0d9;
+    padding-right: 0px;
     padding-bottom: 30px;
   }
 
